@@ -40,7 +40,7 @@ export const DestinationSearch: React.FC<Props> = ({ onSelectDestination }) => {
             setResults([]);
             onSelectDestination(null);
         }
-    }, [query, error]);
+    }, [query, handleSearch, onSelectDestination]);
 
     return (
         <Box data-testid="search-component">
