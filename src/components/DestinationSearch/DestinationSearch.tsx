@@ -41,6 +41,7 @@ export const DestinationSearch: React.FC<Props> = ({ onSelectDestination }) => {
 
     useEffect(() => {
         if (error) {
+            setResults([]);
             onSelectDestination(null);
         }
     }, [error]);
