@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### How to run the project
+
+- `git clone` this repo
+- install the dependencies with `npm run install`
+- run the local server with `npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
