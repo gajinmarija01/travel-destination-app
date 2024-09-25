@@ -32,15 +32,18 @@ export const DestinationSearch: React.FC<Props> = ({ onSelectDestination }) => {
 
     useEffect(() => {
         if (query) {
-            if (error) {
-                onSelectDestination(null)
-            }
             handleSearch(query);
         } else {
             setResults([]);
             onSelectDestination(null);
         }
-    }, [query, handleSearch, onSelectDestination]);
+    }, [query]);
+
+    useEffect(() => {
+        if (error) {
+            onSelectDestination(null);
+        }
+    }, [error]);
 
     return (
         <Box data-testid="search-component">
